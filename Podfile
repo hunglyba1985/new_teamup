@@ -16,6 +16,8 @@ target 'New_TeamUp' do
   pod 'JDStatusBarNotification'
   pod 'SDWebImage', '~> 4.0'
   pod 'MaryPopin'
+  pod 'FBSDKLoginKit'
+
 
   target 'New_TeamUpTests' do
     inherit! :search_paths

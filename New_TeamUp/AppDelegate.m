@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-@import Firebase;
 
 @interface AppDelegate ()
 
@@ -16,10 +15,35 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+//  AppDelegate.m
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+
+- (BOOL)application:(UIApplication *)application
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [[FBSDKApplicationDelegate sharedInstance] application:application
+                             didFinishLaunchingWithOptions:launchOptions];
+    // Add any custom logic here.
+    
+    // Use Firebase library to configure APIs
+    [FIRApp configure];
     return YES;
 }
+
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+    
+    BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                                  openURL:url
+                                                        sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+                                                               annotation:options[UIApplicationOpenURLOptionsAnnotationKey]
+                    ];
+    // Add any custom logic here.
+    return handled;
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
