@@ -15,6 +15,7 @@
 		045BA1FD20BE909100E3E5C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BA1FC20BE909100E3E5C3 /* main.m */; };
 		045BA20720BE909100E3E5C3 /* New_TeamUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BA20620BE909100E3E5C3 /* New_TeamUpTests.m */; };
 		045BA21220BE909100E3E5C3 /* New_TeamUpUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BA21120BE909100E3E5C3 /* New_TeamUpUITests.m */; };
+		045BA22020BE948A00E3E5C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045BA21F20BE948A00E3E5C3 /* GoogleService-Info.plist */; };
 		0C27E5CFF1B1B13FF47D2459 /* libPods-New_TeamUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F61DC23156CFF08493F8D9 /* libPods-New_TeamUp.a */; };
 		3C733C9C05DABA10AAAA0E0A /* libPods-New_TeamUpTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A1354B585990FDBB53FF79 /* libPods-New_TeamUpTests.a */; };
 		E673F9A54B1122D3DEA94ADB /* libPods-New_TeamUpUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0159268514A634BC9245743 /* libPods-New_TeamUpUITests.a */; };
@@ -54,6 +55,7 @@
 		045BA20D20BE909100E3E5C3 /* New_TeamUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = New_TeamUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045BA21120BE909100E3E5C3 /* New_TeamUpUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = New_TeamUpUITests.m; sourceTree = "<group>"; };
 		045BA21320BE909100E3E5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		045BA21F20BE948A00E3E5C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		28F61DC23156CFF08493F8D9 /* libPods-New_TeamUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-New_TeamUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		39D0EBD9CEC2D4903C5533F7 /* Pods-New_TeamUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New_TeamUpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-New_TeamUpUITests/Pods-New_TeamUpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3C2FDD9411626CD601DD3BF9 /* Pods-New_TeamUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New_TeamUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-New_TeamUp/Pods-New_TeamUp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				045BA1F820BE909100E3E5C3 /* LaunchScreen.storyboard */,
 				045BA1FB20BE909100E3E5C3 /* Info.plist */,
 				045BA1FC20BE909100E3E5C3 /* main.m */,
+				045BA21F20BE948A00E3E5C3 /* GoogleService-Info.plist */,
 			);
 			path = New_TeamUp;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				045BA1E620BE908F00E3E5C3 /* Sources */,
 				045BA1E720BE908F00E3E5C3 /* Frameworks */,
 				045BA1E820BE908F00E3E5C3 /* Resources */,
+				E0F41A23F025088E7C812EA7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045BA1FA20BE909100E3E5C3 /* LaunchScreen.storyboard in Resources */,
+				045BA22020BE948A00E3E5C3 /* GoogleService-Info.plist in Resources */,
 				045BA1F720BE909100E3E5C3 /* Assets.xcassets in Resources */,
 				045BA1F520BE909000E3E5C3 /* Main.storyboard in Resources */,
 			);
@@ -353,6 +358,38 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0F41A23F025088E7C812EA7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-New_TeamUp/Pods-New_TeamUp-resources.sh",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Assets/JSQMessagesAssets.bundle",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Controllers/JSQMessagesViewController.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellIncoming.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesCollectionViewCellOutgoing.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesLoadEarlierHeaderView.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesToolbarContentView.xib",
+				"${PODS_ROOT}/JSQMessagesViewController/JSQMessagesViewController/Views/JSQMessagesTypingIndicatorFooterView.xib",
+				"${PODS_ROOT}/XLForm/XLForm/XLForm.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesAssets.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesViewController.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesCollectionViewCellIncoming.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesCollectionViewCellOutgoing.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesLoadEarlierHeaderView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesToolbarContentView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/JSQMessagesTypingIndicatorFooterView.nib",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/XLForm.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-New_TeamUp/Pods-New_TeamUp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
