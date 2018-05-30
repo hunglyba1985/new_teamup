@@ -15,6 +15,9 @@
 		045BA1FD20BE909100E3E5C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BA1FC20BE909100E3E5C3 /* main.m */; };
 		045BA20720BE909100E3E5C3 /* New_TeamUpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BA20620BE909100E3E5C3 /* New_TeamUpTests.m */; };
 		045BA21220BE909100E3E5C3 /* New_TeamUpUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BA21120BE909100E3E5C3 /* New_TeamUpUITests.m */; };
+		0C27E5CFF1B1B13FF47D2459 /* libPods-New_TeamUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F61DC23156CFF08493F8D9 /* libPods-New_TeamUp.a */; };
+		3C733C9C05DABA10AAAA0E0A /* libPods-New_TeamUpTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A1354B585990FDBB53FF79 /* libPods-New_TeamUpTests.a */; };
+		E673F9A54B1122D3DEA94ADB /* libPods-New_TeamUpUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0159268514A634BC9245743 /* libPods-New_TeamUpUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,15 @@
 		045BA20D20BE909100E3E5C3 /* New_TeamUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = New_TeamUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		045BA21120BE909100E3E5C3 /* New_TeamUpUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = New_TeamUpUITests.m; sourceTree = "<group>"; };
 		045BA21320BE909100E3E5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28F61DC23156CFF08493F8D9 /* libPods-New_TeamUp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-New_TeamUp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D0EBD9CEC2D4903C5533F7 /* Pods-New_TeamUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New_TeamUpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-New_TeamUpUITests/Pods-New_TeamUpUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3C2FDD9411626CD601DD3BF9 /* Pods-New_TeamUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New_TeamUp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-New_TeamUp/Pods-New_TeamUp.debug.xcconfig"; sourceTree = "<group>"; };
+		41A944BA54F3A8DAC8E914DB /* Pods-New_TeamUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New_TeamUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-New_TeamUp/Pods-New_TeamUp.release.xcconfig"; sourceTree = "<group>"; };
+		50A1354B585990FDBB53FF79 /* libPods-New_TeamUpTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-New_TeamUpTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E03552E08BA046C6101DEDF /* Pods-New_TeamUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New_TeamUpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-New_TeamUpTests/Pods-New_TeamUpTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B195A6953889D8890E8C208 /* Pods-New_TeamUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New_TeamUpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-New_TeamUpUITests/Pods-New_TeamUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9170B722FFE35C8CED5D6035 /* Pods-New_TeamUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New_TeamUpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-New_TeamUpTests/Pods-New_TeamUpTests.release.xcconfig"; sourceTree = "<group>"; };
+		F0159268514A634BC9245743 /* libPods-New_TeamUpUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-New_TeamUpUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C27E5CFF1B1B13FF47D2459 /* libPods-New_TeamUp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C733C9C05DABA10AAAA0E0A /* libPods-New_TeamUpTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E673F9A54B1122D3DEA94ADB /* libPods-New_TeamUpUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				045BA20520BE909100E3E5C3 /* New_TeamUpTests */,
 				045BA21020BE909100E3E5C3 /* New_TeamUpUITests */,
 				045BA1EB20BE908F00E3E5C3 /* Products */,
+				0E8FBBEC560C7DDC8BBBB98A /* Pods */,
+				814E21F0703A77CD62A423F4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +149,29 @@
 			path = New_TeamUpUITests;
 			sourceTree = "<group>";
 		};
+		0E8FBBEC560C7DDC8BBBB98A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C2FDD9411626CD601DD3BF9 /* Pods-New_TeamUp.debug.xcconfig */,
+				41A944BA54F3A8DAC8E914DB /* Pods-New_TeamUp.release.xcconfig */,
+				5E03552E08BA046C6101DEDF /* Pods-New_TeamUpTests.debug.xcconfig */,
+				9170B722FFE35C8CED5D6035 /* Pods-New_TeamUpTests.release.xcconfig */,
+				7B195A6953889D8890E8C208 /* Pods-New_TeamUpUITests.debug.xcconfig */,
+				39D0EBD9CEC2D4903C5533F7 /* Pods-New_TeamUpUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		814E21F0703A77CD62A423F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28F61DC23156CFF08493F8D9 /* libPods-New_TeamUp.a */,
+				50A1354B585990FDBB53FF79 /* libPods-New_TeamUpTests.a */,
+				F0159268514A634BC9245743 /* libPods-New_TeamUpUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +179,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 045BA21620BE909100E3E5C3 /* Build configuration list for PBXNativeTarget "New_TeamUp" */;
 			buildPhases = (
+				44798B5DBCA42598F1D5403F /* [CP] Check Pods Manifest.lock */,
 				045BA1E620BE908F00E3E5C3 /* Sources */,
 				045BA1E720BE908F00E3E5C3 /* Frameworks */,
 				045BA1E820BE908F00E3E5C3 /* Resources */,
@@ -156,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 045BA21920BE909100E3E5C3 /* Build configuration list for PBXNativeTarget "New_TeamUpTests" */;
 			buildPhases = (
+				12333C239305539A146B1C68 /* [CP] Check Pods Manifest.lock */,
 				045BA1FE20BE909100E3E5C3 /* Sources */,
 				045BA1FF20BE909100E3E5C3 /* Frameworks */,
 				045BA20020BE909100E3E5C3 /* Resources */,
@@ -174,6 +216,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 045BA21C20BE909100E3E5C3 /* Build configuration list for PBXNativeTarget "New_TeamUpUITests" */;
 			buildPhases = (
+				743D1ECCD34AE1110FDD8D5B /* [CP] Check Pods Manifest.lock */,
 				045BA20920BE909100E3E5C3 /* Sources */,
 				045BA20A20BE909100E3E5C3 /* Frameworks */,
 				045BA20B20BE909100E3E5C3 /* Resources */,
@@ -256,6 +299,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12333C239305539A146B1C68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-New_TeamUpTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44798B5DBCA42598F1D5403F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-New_TeamUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		743D1ECCD34AE1110FDD8D5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-New_TeamUpUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		045BA1E620BE908F00E3E5C3 /* Sources */ = {
@@ -431,6 +531,7 @@
 		};
 		045BA21720BE909100E3E5C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C2FDD9411626CD601DD3BF9 /* Pods-New_TeamUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -448,6 +549,7 @@
 		};
 		045BA21820BE909100E3E5C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41A944BA54F3A8DAC8E914DB /* Pods-New_TeamUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -465,6 +567,7 @@
 		};
 		045BA21A20BE909100E3E5C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E03552E08BA046C6101DEDF /* Pods-New_TeamUpTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +587,7 @@
 		};
 		045BA21B20BE909100E3E5C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9170B722FFE35C8CED5D6035 /* Pods-New_TeamUpTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +607,7 @@
 		};
 		045BA21D20BE909100E3E5C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B195A6953889D8890E8C208 /* Pods-New_TeamUpUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4TS7YLE39;
@@ -521,6 +626,7 @@
 		};
 		045BA21E20BE909100E3E5C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39D0EBD9CEC2D4903C5533F7 /* Pods-New_TeamUpUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4TS7YLE39;
