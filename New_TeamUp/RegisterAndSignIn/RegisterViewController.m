@@ -23,8 +23,24 @@
     loginButton.delegate = self;
 
     [self.view addSubview:loginButton];
+    [self loadUserFacebookProfile];
+    
 }
 
+-(void) loadUserFacebookProfile{
+    [FBSDKProfile loadCurrentProfileWithCompletion:
+     ^(FBSDKProfile *profile, NSError *error) {
+         if (profile) {
+             NSLog(@"Hello, %@!", profile.name);
+         }
+     }];
+    
+    FBSDKProfilePictureView *profilePictureView = [[FBSDKProfilePictureView alloc] init];
+    profilePictureView.frame = CGRectMake(0,0,100,100);
+    profilePictureView.center = CGPointMake(self.view.center.x, 200);
+    profilePictureView.profileID = [[FBSDKAccessToken currentAccessToken] userID];
+    [self.view addSubview:profilePictureView];
+}
 
 
 #pragma mark - FBSDKLoginButtonDelegate
