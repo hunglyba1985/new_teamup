@@ -7,6 +7,7 @@
 //
 
 #import "RegisterViewController.h"
+#import "TabBarController.h"
 
 @interface RegisterViewController () <FBSDKLoginButtonDelegate>
 
@@ -17,21 +18,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    // Optional: Place the button in the center of your view.
-    loginButton.center = self.view.center;
-    loginButton.delegate = self;
-
-    [self.view addSubview:loginButton];
+    [self addFacebookButton];
     [self loadUserFacebookProfile];
     
 }
 
+-(void) addFacebookButton{
+    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
+    // Optional: Place the button in the center of your view.
+    loginButton.center = self.view.center;
+    loginButton.delegate = self;
+    loginButton.readPermissions = @[@"public_profile", @"email"];
+    [self.view addSubview:loginButton];
+}
+
+
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.title = @"Register";
+}
+
 -(void) loadUserFacebookProfile{
+    
     [FBSDKProfile loadCurrentProfileWithCompletion:
      ^(FBSDKProfile *profile, NSError *error) {
          if (profile) {
              NSLog(@"Hello, %@!", profile.name);
+             UILabel *welcomeLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40)];
+             welcomeLabel.text = [NSString stringWithFormat:@"Hello, %@!",profile.name];
+             welcomeLabel.textAlignment = NSTextAlignmentCenter;
+             welcomeLabel.center = CGPointMake(self.view.center.x, 350);
+             [self.view addSubview:welcomeLabel];
          }
      }];
     
@@ -40,7 +57,10 @@
     profilePictureView.center = CGPointMake(self.view.center.x, 200);
     profilePictureView.profileID = [[FBSDKAccessToken currentAccessToken] userID];
     [self.view addSubview:profilePictureView];
+    
+ 
 }
+
 
 
 #pragma mark - FBSDKLoginButtonDelegate
@@ -61,6 +81,12 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
                                                      // User successfully signed in. Get user data from the FIRUser object
                                                      // ...
                                                      NSLog(@"register with facebook success");
+                                                     NSLog(@"user signed in-------");
+                                                     NSLog(@"get current user is %@",[FIRAuth auth].currentUser.phoneNumber);
+                                                     TabBarController *mainTabView = [self.storyboard instantiateViewControllerWithIdentifier:@"TabBarController"];
+                                                     [self.navigationController pushViewController:mainTabView animated:true];
+
+                                                     
                                                  }];
     } else {
         NSLog(@"error when login facebook");

@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "MainViewController.h"
+#import "ViewController.h"
+#import "TabBarController.h"
+
 
 @interface AppDelegate ()
 
@@ -28,6 +32,9 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Use Firebase library to configure APIs
     [FIRApp configure];
+    
+    [self checkUserSignIn];
+    
     return YES;
 }
 
@@ -44,6 +51,31 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     return handled;
 }
 
+-(void) checkUserSignIn
+{
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    if ([FIRAuth auth].currentUser) {
+        // User is signed in.
+        // ...
+        NSLog(@"user signed in-------");
+        NSLog(@"get current user is %@",[FIRAuth auth].currentUser.phoneNumber);
+        TabBarController *mainTabView = [storyboard instantiateViewControllerWithIdentifier:@"TabBarController"];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:mainTabView];
+        self.window.rootViewController  = nav;
+        
+        
+    } else {
+        // No user is signed in.
+        // ...
+        NSLog(@"no user signed in");
+        ViewController *welcomeView = [storyboard instantiateViewControllerWithIdentifier:@"ViewController"];
+        UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:welcomeView];
+        self.window.rootViewController = nav;
+    }
+    [self.window makeKeyAndVisible];
+    
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
