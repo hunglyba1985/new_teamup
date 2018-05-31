@@ -10,6 +10,7 @@
 		042E3CEC20BFA58400D96BC2 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042E3CEB20BFA58400D96BC2 /* MainViewController.m */; };
 		042E3CEF20BFAA7B00D96BC2 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042E3CEE20BFAA7B00D96BC2 /* SettingViewController.m */; };
 		042E3CF220BFABFC00D96BC2 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042E3CF120BFABFC00D96BC2 /* TabBarController.m */; };
+		042E3CF620BFD71000D96BC2 /* PlayerProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 042E3CF520BFD71000D96BC2 /* PlayerProfileController.m */; };
 		045BA1EF20BE909000E3E5C3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BA1EE20BE909000E3E5C3 /* AppDelegate.m */; };
 		045BA1F220BE909000E3E5C3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045BA1F120BE909000E3E5C3 /* ViewController.m */; };
 		045BA1F520BE909000E3E5C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 045BA1F320BE909000E3E5C3 /* Main.storyboard */; };
@@ -49,6 +50,8 @@
 		042E3CEE20BFAA7B00D96BC2 /* SettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
 		042E3CF020BFABFC00D96BC2 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
 		042E3CF120BFABFC00D96BC2 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		042E3CF420BFD71000D96BC2 /* PlayerProfileController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerProfileController.h; sourceTree = "<group>"; };
+		042E3CF520BFD71000D96BC2 /* PlayerProfileController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerProfileController.m; sourceTree = "<group>"; };
 		045BA1EA20BE908F00E3E5C3 /* New_TeamUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = New_TeamUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		045BA1ED20BE908F00E3E5C3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		045BA1EE20BE909000E3E5C3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -126,6 +129,8 @@
 				042E3CEB20BFA58400D96BC2 /* MainViewController.m */,
 				042E3CED20BFAA7B00D96BC2 /* SettingViewController.h */,
 				042E3CEE20BFAA7B00D96BC2 /* SettingViewController.m */,
+				042E3CF420BFD71000D96BC2 /* PlayerProfileController.h */,
+				042E3CF520BFD71000D96BC2 /* PlayerProfileController.m */,
 				042E3CF020BFABFC00D96BC2 /* TabBarController.h */,
 				042E3CF120BFABFC00D96BC2 /* TabBarController.m */,
 			);
@@ -453,6 +458,7 @@
 				045BA1EF20BE909000E3E5C3 /* AppDelegate.m in Sources */,
 				042E3CEC20BFA58400D96BC2 /* MainViewController.m in Sources */,
 				045BA22320BE956600E3E5C3 /* RegisterViewController.m in Sources */,
+				042E3CF620BFD71000D96BC2 /* PlayerProfileController.m in Sources */,
 				042E3CEF20BFAA7B00D96BC2 /* SettingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

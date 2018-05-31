@@ -77,6 +77,22 @@
             </objects>
             <point key="canvasLocation" x="3424.8000000000002" y="113.79310344827587"/>
         </scene>
+        <!--Player-->
+        <scene sceneID="Dif-qB-8wW">
+            <objects>
+                <viewController storyboardIdentifier="PlayerProfileController" id="ot0-OP-DPL" customClass="PlayerProfileController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ec3-Q0-0IA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Me9-1s-quM"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Player" image="user" id="fwi-ux-qM2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="odL-Cg-htX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2575" y="1118"/>
+        </scene>
         <!--Setting-->
         <scene sceneID="Tgb-i7-u4G">
             <objects>
@@ -133,6 +149,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="A8l-sP-9BI" kind="relationship" relationship="viewControllers" id="v3G-TU-Qr7"/>
+                        <segue destination="ot0-OP-DPL" kind="relationship" relationship="viewControllers" id="k5i-Bf-GSm"/>
                         <segue destination="MaK-cl-foX" kind="relationship" relationship="viewControllers" id="iHx-am-5Ye"/>
                     </connections>
                 </tabBarController>
@@ -144,5 +161,6 @@
     <resources>
         <image name="home" width="24" height="24"/>
         <image name="setting" width="24" height="24"/>
+        <image name="user" width="24" height="24"/>
     </resources>
 </document>

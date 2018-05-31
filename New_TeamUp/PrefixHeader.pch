@@ -16,6 +16,8 @@
 @import Firebase;
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "XLForm.h"
+#import "XLFormViewController.h"
 
 
 

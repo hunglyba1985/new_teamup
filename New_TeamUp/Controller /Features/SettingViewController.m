@@ -10,7 +10,7 @@
 #import "ViewController.h"
 
 
-@interface SettingViewController ()  <FBSDKLoginButtonDelegate>
+@interface SettingViewController ()
 
 @end
 
@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-//    [self addFacebookButton];
+    
 }
 
 - (IBAction)signOutClick:(id)sender {
@@ -42,43 +42,7 @@
 
 
 
--(void) addFacebookButton{
-    FBSDKLoginButton *loginButton = [[FBSDKLoginButton alloc] init];
-    // Optional: Place the button in the center of your view.
-    loginButton.center = self.view.center;
-    loginButton.delegate = self;
-    loginButton.readPermissions = @[@"public_profile", @"email"];
-    [self.view addSubview:loginButton];
-}
 
-
-#pragma mark - FBSDKLoginButtonDelegate
-- (void)loginButton:(FBSDKLoginButton *)loginButton
-didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
-              error:(NSError *)error {
-    if (error == nil) {
-        // ...
-        FIRAuthCredential *credential = [FIRFacebookAuthProvider
-                                         credentialWithAccessToken:[FBSDKAccessToken currentAccessToken].tokenString];
-        [[FIRAuth auth] signInAndRetrieveDataWithCredential:credential
-                                                 completion:^(FIRAuthDataResult * _Nullable authResult,
-                                                              NSError * _Nullable error) {
-                                                     if (error) {
-                                                         // ...
-                                                         return;
-                                                     }
-                                                     // User successfully signed in. Get user data from the FIRUser object
-                                                     // ...
-                                                     NSLog(@"register with facebook success");
-                                                 }];
-    } else {
-        NSLog(@"error when login facebook");
-    }
-}
-
-- (void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton {
-    
-}
 
 
 
