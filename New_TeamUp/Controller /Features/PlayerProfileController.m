@@ -11,6 +11,8 @@
 NSString *const kName = @"name";
 NSString *const kNumber = @"number";
 NSString *const kButton = @"button";
+NSString *const kCustomeImage = @"customImage";
+
 
 @interface PlayerProfileController ()
 
@@ -45,9 +47,13 @@ NSString *const kButton = @"button";
     
     form = [XLFormDescriptor formDescriptor];
     
-    section = [XLFormSectionDescriptor formSectionWithTitle:@"Please set information below to register"];
-    section.footerTitle = @"We can add more text here to infor user";
+    section = [XLFormSectionDescriptor formSectionWithTitle:@""];
+//    section.footerTitle = @"We can add more text here to infor user";
     [form addFormSection:section];
+    
+    // Custom image
+    row = [XLFormRowDescriptor formRowDescriptorWithTag:kCustomeImage rowType:ImageCustomCellWithNib title:@"Custom image here"];
+    [section addFormRow:row];
     
     
     // Name
@@ -76,6 +82,18 @@ NSString *const kButton = @"button";
     self.form = form;
     
 }
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // change cell height of a particular cell
+    if ([[self.form formRowAtIndex:indexPath].tag isEqualToString:kCustomeImage]){
+        return 150;
+    }
+    
+    return [super tableView:tableView heightForRowAtIndexPath:indexPath];
+}
+
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];

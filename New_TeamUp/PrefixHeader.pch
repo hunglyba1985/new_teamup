@@ -18,6 +18,7 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import "XLForm.h"
 #import "XLFormViewController.h"
+#import "ImageCustomCell.h"
 
 
 

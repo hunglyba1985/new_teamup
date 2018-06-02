@@ -23,6 +23,10 @@
 		045BA22820BEA88100E3E5C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 045BA22720BEA88100E3E5C3 /* GoogleService-Info.plist */; };
 		0C27E5CFF1B1B13FF47D2459 /* libPods-New_TeamUp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 28F61DC23156CFF08493F8D9 /* libPods-New_TeamUp.a */; };
 		3C733C9C05DABA10AAAA0E0A /* libPods-New_TeamUpTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A1354B585990FDBB53FF79 /* libPods-New_TeamUpTests.a */; };
+		725BB6F020C253FD00677993 /* ImageCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725BB6E820C253F600677993 /* ImageCustomCell.xib */; };
+		725BB6F220C253FD00677993 /* ImageCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 725BB6EA20C253F800677993 /* ImageCustomCell.m */; };
+		725BB6F320C253FD00677993 /* UserImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 725BB6EB20C253F900677993 /* UserImageCell.m */; };
+		725BB6F420C253FD00677993 /* UserImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 725BB6EC20C253FA00677993 /* UserImageCell.xib */; };
 		E673F9A54B1122D3DEA94ADB /* libPods-New_TeamUpUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0159268514A634BC9245743 /* libPods-New_TeamUpUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +82,12 @@
 		41A944BA54F3A8DAC8E914DB /* Pods-New_TeamUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New_TeamUp.release.xcconfig"; path = "Pods/Target Support Files/Pods-New_TeamUp/Pods-New_TeamUp.release.xcconfig"; sourceTree = "<group>"; };
 		50A1354B585990FDBB53FF79 /* libPods-New_TeamUpTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-New_TeamUpTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E03552E08BA046C6101DEDF /* Pods-New_TeamUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New_TeamUpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-New_TeamUpTests/Pods-New_TeamUpTests.debug.xcconfig"; sourceTree = "<group>"; };
+		725BB6E720C253F500677993 /* ImageCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCustomCell.h; sourceTree = "<group>"; };
+		725BB6E820C253F600677993 /* ImageCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCustomCell.xib; sourceTree = "<group>"; };
+		725BB6EA20C253F800677993 /* ImageCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCustomCell.m; sourceTree = "<group>"; };
+		725BB6EB20C253F900677993 /* UserImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserImageCell.m; sourceTree = "<group>"; };
+		725BB6EC20C253FA00677993 /* UserImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserImageCell.xib; sourceTree = "<group>"; };
+		725BB6ED20C253FB00677993 /* UserImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserImageCell.h; sourceTree = "<group>"; };
 		7B195A6953889D8890E8C208 /* Pods-New_TeamUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New_TeamUpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-New_TeamUpUITests/Pods-New_TeamUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9170B722FFE35C8CED5D6035 /* Pods-New_TeamUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-New_TeamUpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-New_TeamUpTests/Pods-New_TeamUpTests.release.xcconfig"; sourceTree = "<group>"; };
 		F0159268514A634BC9245743 /* libPods-New_TeamUpUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-New_TeamUpUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,7 +175,7 @@
 				045BA1ED20BE908F00E3E5C3 /* AppDelegate.h */,
 				045BA1EE20BE909000E3E5C3 /* AppDelegate.m */,
 				042E3CE920BFA55D00D96BC2 /* Controller  */,
-				045BA1F320BE909000E3E5C3 /* Main.storyboard */,
+				725BB6E620C2532500677993 /* View */,
 				045BA1F620BE909100E3E5C3 /* Assets.xcassets */,
 				045BA1F820BE909100E3E5C3 /* LaunchScreen.storyboard */,
 				045BA1FB20BE909100E3E5C3 /* Info.plist */,
@@ -214,6 +224,20 @@
 				39D0EBD9CEC2D4903C5533F7 /* Pods-New_TeamUpUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		725BB6E620C2532500677993 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				725BB6E720C253F500677993 /* ImageCustomCell.h */,
+				725BB6EA20C253F800677993 /* ImageCustomCell.m */,
+				725BB6E820C253F600677993 /* ImageCustomCell.xib */,
+				725BB6ED20C253FB00677993 /* UserImageCell.h */,
+				725BB6EB20C253F900677993 /* UserImageCell.m */,
+				725BB6EC20C253FA00677993 /* UserImageCell.xib */,
+				045BA1F320BE909000E3E5C3 /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		814E21F0703A77CD62A423F4 /* Frameworks */ = {
@@ -333,7 +357,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				725BB6F420C253FD00677993 /* UserImageCell.xib in Resources */,
 				045BA1FA20BE909100E3E5C3 /* LaunchScreen.storyboard in Resources */,
+				725BB6F020C253FD00677993 /* ImageCustomCell.xib in Resources */,
 				045BA22820BEA88100E3E5C3 /* GoogleService-Info.plist in Resources */,
 				045BA1F720BE909100E3E5C3 /* Assets.xcassets in Resources */,
 				045BA1F520BE909000E3E5C3 /* Main.storyboard in Resources */,
@@ -453,6 +479,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				042E3CF220BFABFC00D96BC2 /* TabBarController.m in Sources */,
+				725BB6F220C253FD00677993 /* ImageCustomCell.m in Sources */,
+				725BB6F320C253FD00677993 /* UserImageCell.m in Sources */,
 				045BA1F220BE909000E3E5C3 /* ViewController.m in Sources */,
 				045BA1FD20BE909100E3E5C3 /* main.m in Sources */,
 				045BA1EF20BE909000E3E5C3 /* AppDelegate.m in Sources */,

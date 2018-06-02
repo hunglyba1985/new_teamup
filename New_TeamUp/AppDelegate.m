@@ -32,10 +32,16 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     // Use Firebase library to configure APIs
     [FIRApp configure];
-    
     [self checkUserSignIn];
-    
+    [self registerCustomForm];
     return YES;
+}
+
+-(void)registerCustomForm{
+    [XLFormViewController.cellClassesForRowDescriptorTypes setObject:@"ImageCustomCell" forKey:@"XLFormRowDescriptorYourCustomType"];
+    [XLFormViewController.cellClassesForRowDescriptorTypes setObject:@"UserImageCell" forKey:@"XLFormRowDescriptorYourCustomType"];
+    [XLFormViewController.cellClassesForRowDescriptorTypes setObject:@"SelectLocationCell" forKey:@"XLFormRowDescriptorYourCustomType"];
+
 }
 
 - (BOOL)application:(UIApplication *)application
