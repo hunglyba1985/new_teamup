@@ -76,6 +76,7 @@ didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result
                                                               NSError * _Nullable error) {
                                                      if (error) {
                                                          // ...
+                                                         NSLog(@"get error when register with facebook %@",error);
                                                          return;
                                                      }
                                                      // User successfully signed in. Get user data from the FIRUser object
